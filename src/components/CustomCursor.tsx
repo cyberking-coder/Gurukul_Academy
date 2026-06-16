@@ -11,27 +11,12 @@ export default function CustomCursor() {
     const ring = ringRef.current;
     if (!dot || !ring) return;
 
-    let ringX = 0;
-    let ringY = 0;
-    let mouseX = 0;
-    let mouseY = 0;
-
     const handleMove = (e: MouseEvent) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      dot.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
-    };
-
-    let raf = 0;
-    const animate = () => {
-      ringX += (mouseX - ringX) * 0.18;
-      ringY += (mouseY - ringY) * 0.18;
-      ring.style.transform = `translate(${ringX - 18}px, ${ringY - 18}px)`;
-      raf = requestAnimationFrame(animate);
+      dot.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
+      ring.style.transform = `translate(${e.clientX - 18}px, ${e.clientY - 18}px)`;
     };
 
     window.addEventListener("mousemove", handleMove);
-    raf = requestAnimationFrame(animate);
 
     const interactive = document.querySelectorAll("a, button");
     const grow = () => ring.classList.add("scale-150");
@@ -43,7 +28,6 @@ export default function CustomCursor() {
 
     return () => {
       window.removeEventListener("mousemove", handleMove);
-      cancelAnimationFrame(raf);
       interactive.forEach((el) => {
         el.removeEventListener("mouseenter", grow);
         el.removeEventListener("mouseleave", shrink);
@@ -56,7 +40,7 @@ export default function CustomCursor() {
       <div ref={dotRef} className="cursor-dot hidden md:block" />
       <div
         ref={ringRef}
-        className="cursor-ring hidden md:block transition-transform duration-300"
+        className="cursor-ring hidden md:block transition-[scale] duration-200 ease-out"
       />
     </>
   );
