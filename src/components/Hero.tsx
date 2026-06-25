@@ -58,7 +58,7 @@ export default function Hero() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="font-devanagari text-gold/80 text-lg md:text-xl mb-6 tracking-wide"
         >
-          गुरुकुल अकादमी
+          गुरुकुल अकॅडेमी
         </motion.div>
 
         <h1 className="font-heading font-extrabold leading-[0.95] tracking-tight text-[13vw] md:text-[7vw] lg:text-[6.2vw]">
@@ -88,10 +88,10 @@ export default function Hero() {
           className="mt-10 flex flex-wrap items-center gap-5"
         >
           <a
-            href="#contact"
+            href="/trial"
             className="group inline-flex items-center gap-3 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-transform hover:scale-105"
           >
-            Book a Free Trial Class
+            Take a Free Trial Class
             <ArrowRight
               size={16}
               className="transition-transform group-hover:translate-x-1"

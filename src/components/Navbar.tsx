@@ -8,6 +8,7 @@ import { SITE } from "@/data/content";
 const LINKS = [
   { label: "Programs", href: "#programs" },
   { label: "Why Us", href: "#why-us" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
 ];

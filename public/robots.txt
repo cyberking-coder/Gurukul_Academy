@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyberking-coder.github.io/Gurukul_Academy/sitemap.xml
