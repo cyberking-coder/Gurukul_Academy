@@ -24,7 +24,7 @@ const starVariants = {
   visible: (j: number) => ({
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.3, delay: 0.4 + j * 0.06, ease: "backOut" },
+    transition: { duration: 0.35, delay: 0.4 + j * 0.06, ease: [0.34, 1.56, 0.64, 1] as const },
   }),
 };
 
