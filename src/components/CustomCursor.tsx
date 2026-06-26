@@ -11,25 +11,35 @@ export default function CustomCursor() {
     const ring = ringRef.current;
     if (!dot || !ring) return;
 
+    // Single shared source of truth for position so the dot and ring are
+    // always concentric. Scale is baked into the same transform string and
+    // eased per-frame, so it can never override or desync the translate.
+    let x = window.innerWidth / 2;
+    let y = window.innerHeight / 2;
+    let scale = 1;
+    let targetScale = 1;
+    let raf = 0;
+
+    const render = () => {
+      scale += (targetScale - scale) * 0.2;
+      dot.style.transform = `translate(${x - 5}px, ${y - 5}px)`;
+      ring.style.transform = `translate(${x - 18}px, ${y - 18}px) scale(${scale.toFixed(3)})`;
+      raf = requestAnimationFrame(render);
+    };
+    raf = requestAnimationFrame(render);
+
     const handleMove = (e: MouseEvent) => {
-      dot.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
-      ring.style.transform = `translate(${e.clientX - 18}px, ${e.clientY - 18}px)`;
+      x = e.clientX;
+      y = e.clientY;
     };
 
-    // Use event delegation so the ring grows over any interactive element,
-    // including ones rendered after mount (popups, mobile menu, etc.).
-    // Scaling is done via the CSS `scale` property (see .cursor-ring.is-hovering)
-    // which composes with the inline translate transform instead of overriding it,
-    // so the ring stays centred on the cursor instead of drifting away.
+    // Event delegation grows the ring over any interactive element, including
+    // ones rendered after mount (popups, mobile menu, etc.).
     const handleOver = (e: MouseEvent) => {
-      if ((e.target as Element)?.closest?.("a, button")) {
-        ring.classList.add("is-hovering");
-      }
+      if ((e.target as Element)?.closest?.("a, button")) targetScale = 1.6;
     };
     const handleOut = (e: MouseEvent) => {
-      if ((e.target as Element)?.closest?.("a, button")) {
-        ring.classList.remove("is-hovering");
-      }
+      if ((e.target as Element)?.closest?.("a, button")) targetScale = 1;
     };
 
     window.addEventListener("mousemove", handleMove);
@@ -37,6 +47,7 @@ export default function CustomCursor() {
     document.addEventListener("mouseout", handleOut);
 
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener("mousemove", handleMove);
       document.removeEventListener("mouseover", handleOver);
       document.removeEventListener("mouseout", handleOut);
