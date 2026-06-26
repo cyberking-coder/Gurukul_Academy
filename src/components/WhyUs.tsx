@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, GraduationCap, TrendingUp, Heart } from "lucide-react";
+import { Users, GraduationCap, TrendingUp, Landmark } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import { FEATURES } from "@/data/content";
 
-const ICONS = [Users, GraduationCap, TrendingUp, Heart];
+const ICONS = [Users, GraduationCap, TrendingUp, Landmark];
 
 export default function WhyUs() {
   return (
