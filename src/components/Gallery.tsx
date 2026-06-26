@@ -5,39 +5,41 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const IMAGES = [
   {
-    src: "/gallery/gallery-1.png",
+    src: `${BASE}/gallery/gallery-1.png`,
     alt: "Teacher with full batch of students on an outdoor excursion",
     quote: "Beyond the classroom, every experience is a lesson in disguise.",
     tag: "Batch Outing",
   },
   {
-    src: "/gallery/gallery-2.png",
+    src: `${BASE}/gallery/gallery-2.png`,
     alt: "Faculty and students together at outdoor trip",
     quote: "The best teachers don't just teach — they lead adventures.",
     tag: "Faculty & Students",
   },
   {
-    src: "/gallery/gallery-3.png",
+    src: `${BASE}/gallery/gallery-3.png`,
     alt: "Farewell 2023 celebration in the classroom",
     quote: "Every farewell is a celebration of the journey we shared together.",
     tag: "Farewell 2023",
   },
   {
-    src: "/gallery/gallery-4.png",
+    src: `${BASE}/gallery/gallery-4.png`,
     alt: "Educational field trip with students at Avani Agri Tourism",
     quote: "Learning has no boundaries — it blooms wherever curiosity takes root.",
     tag: "Educational Trip",
   },
   {
-    src: "/gallery/gallery-5.png",
+    src: `${BASE}/gallery/gallery-5.png`,
     alt: "Students dressed up for farewell party in classroom",
     quote: "Not goodbye — just see you at the top.",
     tag: "Farewell Party",
   },
   {
-    src: "/gallery/gallery-6.png",
+    src: `${BASE}/gallery/gallery-6.png`,
     alt: "Students attentively focused during a class at Gurukul Academy",
     quote: "Where focus meets passion, excellence is inevitable.",
     tag: "In Class",
