@@ -47,15 +47,16 @@ export default function Testimonials() {
         <div className="flex items-center gap-3 shrink-0">
           <div className="flex items-center gap-1 text-gold">
             {Array.from({ length: 5 }).map((_, i) => (
-              <motion.span
+              <motion.div
                 key={i}
+                className="flex"
                 initial={{ opacity: 0, y: -8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 + i * 0.07, duration: 0.4 }}
               >
                 <Star size={20} fill="currentColor" strokeWidth={0} />
-              </motion.span>
+              </motion.div>
             ))}
           </div>
           <span className="font-heading text-3xl font-bold">{SITE.rating}</span>
@@ -112,16 +113,17 @@ export default function Testimonials() {
               {/* Stars pop in */}
               <div className="ml-auto flex items-center gap-0.5 text-gold">
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <motion.span
+                  <motion.div
                     key={j}
                     custom={j}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={starVariants}
+                    className="flex"
                   >
                     <Star size={12} fill="currentColor" strokeWidth={0} />
-                  </motion.span>
+                  </motion.div>
                 ))}
               </div>
             </div>
