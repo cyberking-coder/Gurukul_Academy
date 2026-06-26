@@ -165,9 +165,6 @@ function ScrollCard({
             priority={false}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#08090b]/75 via-transparent to-transparent" />
-          <span className="absolute top-4 left-4 rounded-full bg-gold/20 border border-gold/40 px-3 py-1 text-xs font-semibold text-gold tracking-widest uppercase">
-            {item.tag}
-          </span>
         </div>
         {/* quote */}
         <div className="px-6 md:px-8 py-5 md:py-6">
