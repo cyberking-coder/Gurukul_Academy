@@ -9,7 +9,7 @@ export default function Footer() {
             Gurukul<span className="text-gold">.</span>Academy
           </span>
           <span className="font-devanagari text-cream/40 text-sm">
-            गुरुकुल अकादमी
+            गुरुकुल अकॅडमी
           </span>
         </div>
         <p className="text-xs text-cream/40 text-center md:text-left">

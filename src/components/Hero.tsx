@@ -59,7 +59,7 @@ export default function Hero() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="font-devanagari text-gold/80 text-lg md:text-xl mb-6 tracking-wide"
         >
-          गुरुकुल अकॅडेमी
+          गुरुकुल अकॅडमी
         </motion.div>
 
         <h1 className="font-heading font-extrabold leading-[0.95] tracking-tight text-[13vw] md:text-[7vw] lg:text-[6.2vw]">

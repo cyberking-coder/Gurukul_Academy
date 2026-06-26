@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "SSC coaching Pune",
     "small batch coaching Pune",
     "personal attention coaching Pune",
-    "गुरुकुल अकॅडेमी",
+    "गुरुकुल अकॅडमी",
   ],
   authors: [{ name: "Gurukul Academy", url: BASE_URL }],
   creator: "Gurukul Academy",
@@ -70,7 +70,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   name: "Gurukul Academy",
-  alternateName: "गुरुकुल अकॅडेमी",
+  alternateName: "गुरुकुल अकॅडमी",
   url: BASE_URL,
   logo: `${BASE_URL}/favicon.ico`,
   description:

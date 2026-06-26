@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Gurukul Academy",
-  nameHindi: "गुरुकुल अकादमी",
+  nameHindi: "गुरुकुल अकॅडमी",
   rating: 5.0,
   reviewCount: 118,
   phone: "099708 15169",
@@ -31,10 +31,10 @@ export const PROGRAMS = [
     ],
   },
   {
-    title: "Class 11 & 12 Science",
+    title: "Class 11 & 12 (PCMB)",
     tag: "Board + Competitive",
-    desc: "In-depth coverage of Physics, Chemistry, Maths & Biology with structured problem-solving for board exams and competitive groundwork.",
-    points: ["HSC board focus", "Numerical problem-solving", "Personal mentoring"],
+    desc: "In-depth coverage of Physics, Chemistry, Maths & Biology — structured problem-solving for HSC board exams with dedicated preparation for CET, NEET and JEE.",
+    points: ["HSC board (PCMB)", "CET · NEET · JEE prep", "Numerical problem-solving", "Personal mentoring"],
   },
   {
     title: "Crash Courses",
@@ -71,20 +71,23 @@ export const FEATURES = [
 
 export const TESTIMONIALS = [
   {
-    name: "Neha Sirsat",
-    meta: "Class 12 Student",
-    text: "My experience at Gurukul Academy has been excellent. The teaching quality is outstanding with clear and in-depth explanation. The faculty is knowledgeable, friendly, and always supportive.",
+    name: "Ashwini Kattimani",
+    meta: "Student · 3 years ago",
+    text: "Gurukul Academy 🙏 this is the best class to create future.... it is a temple.... where Saraswati maa lives ..... they teach in the best ways .... they cover basic to whole syllabus which helps us so much ✨",
   },
   {
-    name: "Sharvari Gaikwad",
-    meta: "Class 12 Student",
-    text: "Each batch is of only 12–15 students. Each student gets personal attention — something I never got at bigger classes. It has genuinely changed how I understand Maths and Science.",
+    name: "Vaishnavi Sonar",
+    meta: "Student · 1 year ago",
+    text: "I was in Gurukul Academy from 10th std to 12th std and for CET crash course also. It was a great experience. With academic syllabus, we learnt many more things like time management, presentation of answer sheet, confidence, self motivation and discipline. I really miss my teachers but their teaching will always be with me 😊 which will help me in life's journey ❤️",
   },
   {
-    name: "Sonali Joshi",
-    meta: "Parent",
-    text: "गुरुकुल अकॅडेमी मधील सर्व शिक्षक खूप छान शिकवतात. विद्यार्थ्यांच्या Maths व Science मधील अडचणी सोडवून योग्य मार्गदर्शन करतात.",
-    translation:
-      "All the teachers at Gurukul Academy teach wonderfully. They resolve students' difficulties in Maths and Science and provide the right guidance.",
+    name: "Poonam Khondapure",
+    meta: "Parent · 4 years ago",
+    text: "I want to thank you for such a great educational institution that helped my son not only in academics but to improve confidence. All staff not only work to improve academics but also encourage children to dream high. Equal attention given to each child is the best part. Vinaya maam is very kind, patient, and a good counsellor — her way of teaching is very interesting and focuses on concept clearance.",
+  },
+  {
+    name: "Rahul Purandare",
+    meta: "Parent · 2 years ago",
+    text: "Nerurkar madam is a very respectable and perfect teacher if you want your son/daughter to get education rather than just achieve good marks. She has a highly dedicated staff who put their heart out for students. From my personal experience, Nerurkar madam takes care of all students as a mother. Every student is treated equally and individual focus is the speciality of her teaching principle. I strongly recommend Gurukul Academy.",
   },
 ];

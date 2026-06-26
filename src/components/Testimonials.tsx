@@ -31,7 +31,7 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className="mt-16 grid md:grid-cols-3 gap-6">
+      <div className="mt-16 grid md:grid-cols-2 gap-6">
         {TESTIMONIALS.map((t, i) => (
           <motion.div
             key={t.name}
@@ -45,11 +45,6 @@ export default function Testimonials() {
             <p className="mt-5 text-cream/75 leading-relaxed text-sm md:text-base flex-1">
               &ldquo;{t.text}&rdquo;
             </p>
-            {t.translation && (
-              <p className="mt-3 text-cream/40 text-xs italic leading-relaxed">
-                {t.translation}
-              </p>
-            )}
             <div className="mt-6 flex items-center gap-3 pt-6 border-t border-white/10">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/15 text-gold font-heading font-bold">
                 {t.name.charAt(0)}
