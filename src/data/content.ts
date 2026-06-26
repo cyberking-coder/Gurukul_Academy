@@ -19,10 +19,16 @@ export const STATS = [
 
 export const PROGRAMS = [
   {
-    title: "Class 9 & 10",
+    title: "Class 8 to 10",
     tag: "Foundation",
-    desc: "Building strong fundamentals in Maths & Science with concept-first teaching, ensuring board-exam mastery and a head-start for Class 11.",
-    points: ["SSC & CBSE boards", "Weekly concept tests", "Doubt-solving sessions"],
+    desc: "Building strong fundamentals across Maths, Science, Languages, Grammar, Writing Skills and SST with concept-first teaching — ensuring board-exam mastery and a head-start for Class 11.",
+    points: [
+      "SSC, CBSE & ICSE boards",
+      "Languages, Grammar & Writing Skills",
+      "Fearless SST",
+      "Weekly concept tests",
+      "Doubt-solving sessions",
+    ],
   },
   {
     title: "Class 11 & 12 Science",
