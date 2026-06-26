@@ -13,7 +13,7 @@ export const SITE = {
 export const STATS = [
   { value: "5.0", label: "Google Rating", suffix: "★" },
   { value: "118", label: "5-Star Reviews", suffix: "+" },
-  { value: "10", label: "Students per Batch", suffix: "" },
+  { value: "12–15", label: "Students per Batch", suffix: "" },
   { value: "12+", label: "Years of Excellence", suffix: "" },
 ];
 
@@ -39,15 +39,15 @@ export const PROGRAMS = [
   {
     title: "Personal Mentoring",
     tag: "1-on-1",
-    desc: "Small batches of just 10 students mean every learner gets individual attention, tracked progress, and a mentor who knows their gaps.",
-    points: ["Max 10 students/batch", "Progress tracking", "Parent updates"],
+    desc: "Small batches of just 12–15 students mean every learner gets individual attention, tracked progress, and a mentor who knows their gaps.",
+    points: ["12–15 students/batch", "Progress tracking", "Parent updates"],
   },
 ];
 
 export const FEATURES = [
   {
     title: "Small Batches, Big Attention",
-    desc: "Only 10 students per batch — every question gets answered, every student gets seen.",
+    desc: "Only 12–15 students per batch — every question gets answered, every student gets seen.",
   },
   {
     title: "Experienced Faculty",
@@ -72,7 +72,7 @@ export const TESTIMONIALS = [
   {
     name: "Sharvari Gaikwad",
     meta: "Class 12 Student",
-    text: "Each batch is of only 10 students. Each student gets personal attention — something I never got at bigger classes. It has genuinely changed how I understand Maths and Science.",
+    text: "Each batch is of only 12–15 students. Each student gets personal attention — something I never got at bigger classes. It has genuinely changed how I understand Maths and Science.",
   },
   {
     name: "Sonali Joshi",

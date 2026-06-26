@@ -30,7 +30,7 @@ export default function Contact() {
               next batch is waiting.
             </h2>
             <p className="mt-5 text-cream/60 max-w-md leading-relaxed">
-              Batches are limited to 10 students. Book a free trial class
+              Batches are limited to 12–15 students. Take a free trial class
               today and see why parents and students rate us 5.0 out of 5.
             </p>
 

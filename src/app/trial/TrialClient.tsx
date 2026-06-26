@@ -88,7 +88,7 @@ export default function TrialClient() {
               Ready to join the next batch?
             </p>
             <p className="text-cream/55 text-sm mt-1">
-              Batches fill fast — max 10 students only.
+              Batches fill fast — 12–15 students only.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

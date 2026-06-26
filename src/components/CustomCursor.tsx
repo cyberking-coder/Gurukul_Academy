@@ -16,32 +16,37 @@ export default function CustomCursor() {
       ring.style.transform = `translate(${e.clientX - 18}px, ${e.clientY - 18}px)`;
     };
 
-    window.addEventListener("mousemove", handleMove);
+    // Use event delegation so the ring grows over any interactive element,
+    // including ones rendered after mount (popups, mobile menu, etc.).
+    // Scaling is done via the CSS `scale` property (see .cursor-ring.is-hovering)
+    // which composes with the inline translate transform instead of overriding it,
+    // so the ring stays centred on the cursor instead of drifting away.
+    const handleOver = (e: MouseEvent) => {
+      if ((e.target as Element)?.closest?.("a, button")) {
+        ring.classList.add("is-hovering");
+      }
+    };
+    const handleOut = (e: MouseEvent) => {
+      if ((e.target as Element)?.closest?.("a, button")) {
+        ring.classList.remove("is-hovering");
+      }
+    };
 
-    const interactive = document.querySelectorAll("a, button");
-    const grow = () => ring.classList.add("scale-150");
-    const shrink = () => ring.classList.remove("scale-150");
-    interactive.forEach((el) => {
-      el.addEventListener("mouseenter", grow);
-      el.addEventListener("mouseleave", shrink);
-    });
+    window.addEventListener("mousemove", handleMove);
+    document.addEventListener("mouseover", handleOver);
+    document.addEventListener("mouseout", handleOut);
 
     return () => {
       window.removeEventListener("mousemove", handleMove);
-      interactive.forEach((el) => {
-        el.removeEventListener("mouseenter", grow);
-        el.removeEventListener("mouseleave", shrink);
-      });
+      document.removeEventListener("mouseover", handleOver);
+      document.removeEventListener("mouseout", handleOut);
     };
   }, []);
 
   return (
     <>
       <div ref={dotRef} className="cursor-dot hidden md:block" />
-      <div
-        ref={ringRef}
-        className="cursor-ring hidden md:block transition-[scale] duration-200 ease-out"
-      />
+      <div ref={ringRef} className="cursor-ring hidden md:block" />
     </>
   );
 }

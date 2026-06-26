@@ -77,7 +77,7 @@ export default function Hero() {
           className="mt-8 max-w-xl text-base md:text-lg text-cream/65 leading-relaxed"
         >
           Pune&rsquo;s most trusted coaching institute for Class 9–12 Maths &amp;
-          Science — small batches of 10, personally mentored, consistently
+          Science — small batches of 12–15, personally mentored, consistently
           excellent.
         </motion.p>
 

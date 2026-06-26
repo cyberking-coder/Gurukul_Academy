@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Gurukul Academy Pune",
   },
   description:
-    "Gurukul Academy — Pune's top-rated coaching institute for Class 9–12 Maths & Science. Small batches of 10 students, personal attention, 5.0 ★ Google rating, 118+ reviews. Located at Karvenagar, Pune 411052.",
+    "Gurukul Academy — Pune's top-rated coaching institute for Class 9–12 Maths & Science. Small batches of 12–15 students, personal attention, 5.0 ★ Google rating, 118+ reviews. Located at Karvenagar, Pune 411052.",
   keywords: [
     "Gurukul Academy Pune",
     "coaching classes Karvenagar",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Gurukul Academy",
     title: "Gurukul Academy — Best Coaching Classes in Karvenagar, Pune",
     description:
-      "5.0 ★ rated coaching institute. Small batches of 10 students. Personal mentoring for Class 9–12 Maths & Science. Karvenagar, Pune.",
+      "5.0 ★ rated coaching institute. Small batches of 12–15 students. Personal mentoring for Class 9–12 Maths & Science. Karvenagar, Pune.",
     images: [{ url: `${BASE_URL}/gallery/gallery-6.png`, width: 1200, height: 630, alt: "Gurukul Academy classroom" }],
   },
   twitter: {
@@ -74,7 +74,7 @@ const jsonLd = {
   url: BASE_URL,
   logo: `${BASE_URL}/favicon.ico`,
   description:
-    "Coaching institute for Class 9–12 Maths & Science with small batches of 10 students and personalised mentoring.",
+    "Coaching institute for Class 9–12 Maths & Science with small batches of 12–15 students and personalised mentoring.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
