@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { Star, MapPin, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { SITE } from "@/data/content";
 
 const wordVariants: Variants = {
@@ -87,7 +88,7 @@ export default function Hero() {
           transition={{ delay: 1.05, duration: 0.7 }}
           className="mt-10 flex flex-wrap items-center gap-5"
         >
-          <a
+          <Link
             href="/trial"
             className="group inline-flex items-center gap-3 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-transform hover:scale-105"
           >
@@ -96,7 +97,7 @@ export default function Hero() {
               size={16}
               className="transition-transform group-hover:translate-x-1"
             />
-          </a>
+          </Link>
 
           <div className="flex items-center gap-2 text-sm text-cream/70">
             <div className="flex items-center gap-1 text-gold">
