@@ -72,22 +72,22 @@ export const FEATURES = [
 export const TESTIMONIALS = [
   {
     name: "Ashwini Kattimani",
-    meta: "Student · 3 years ago",
+    meta: "Student",
     text: "Gurukul Academy 🙏 this is the best class to create future.... it is a temple.... where Saraswati maa lives ..... they teach in the best ways .... they cover basic to whole syllabus which helps us so much ✨",
   },
   {
     name: "Vaishnavi Sonar",
-    meta: "Student · 1 year ago",
+    meta: "Student",
     text: "I was in Gurukul Academy from 10th std to 12th std and for CET crash course also. It was a great experience. With academic syllabus, we learnt many more things like time management, presentation of answer sheet, confidence, self motivation and discipline. I really miss my teachers but their teaching will always be with me 😊 which will help me in life's journey ❤️",
   },
   {
     name: "Poonam Khondapure",
-    meta: "Parent · 4 years ago",
+    meta: "Parent",
     text: "I want to thank you for such a great educational institution that helped my son not only in academics but to improve confidence. All staff not only work to improve academics but also encourage children to dream high. Equal attention given to each child is the best part. Vinaya maam is very kind, patient, and a good counsellor — her way of teaching is very interesting and focuses on concept clearance.",
   },
   {
     name: "Rahul Purandare",
-    meta: "Parent · 2 years ago",
+    meta: "Parent",
     text: "Nerurkar madam is a very respectable and perfect teacher if you want your son/daughter to get education rather than just achieve good marks. She has a highly dedicated staff who put their heart out for students. From my personal experience, Nerurkar madam takes care of all students as a mother. Every student is treated equally and individual focus is the speciality of her teaching principle. I strongly recommend Gurukul Academy.",
   },
 ];
