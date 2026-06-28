@@ -77,8 +77,8 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.7 }}
           className="mt-8 max-w-xl text-base md:text-lg text-cream/65 leading-relaxed"
         >
-          Pune&rsquo;s most trusted coaching institute for Class 8–12 Maths &amp;
-          Science — small batches of 12–15, personally mentored, consistently
+          Pune&rsquo;s most trusted coaching institute for Class 8–12 — all
+          subjects, small batches of 12–15, personally mentored, consistently
           excellent.
         </motion.p>
 
