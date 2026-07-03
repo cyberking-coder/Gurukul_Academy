@@ -25,7 +25,7 @@ export default function Programs() {
             className="group relative rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-10 hover:bg-white/[0.05] hover:border-gold/40 transition-all duration-500"
           >
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-[0.2em] text-gold/80 font-semibold">
+              <span className="text-sm md:text-base uppercase tracking-[0.2em] text-gold/80 font-semibold">
                 {p.tag}
               </span>
               <ArrowUpRight
@@ -36,16 +36,16 @@ export default function Programs() {
             <h3 className="font-heading mt-4 text-2xl md:text-3xl font-bold">
               {p.title}
             </h3>
-            <p className="mt-4 text-cream/55 leading-relaxed text-sm md:text-base">
+            <p className="mt-4 text-cream/60 leading-relaxed text-base md:text-lg">
               {p.desc}
             </p>
-            <ul className="mt-6 flex flex-col gap-2">
+            <ul className="mt-6 flex flex-col gap-2.5">
               {p.points.map((pt) => (
                 <li
                   key={pt}
-                  className="flex items-center gap-2 text-sm text-cream/70"
+                  className="flex items-center gap-2 text-sm md:text-base text-cream/70"
                 >
-                  <Check size={14} className="text-gold" />
+                  <Check size={16} className="text-gold shrink-0" />
                   {pt}
                 </li>
               ))}

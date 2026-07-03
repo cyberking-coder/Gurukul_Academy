@@ -24,8 +24,8 @@ export const PROGRAMS = [
     desc: "Building strong fundamentals across Maths, Science, Languages, Grammar, Writing Skills and SST with concept-first teaching — ensuring board-exam mastery and a head-start for Class 11.",
     points: [
       "SSC, CBSE & ICSE boards",
-      "Languages, Grammar & Writing Skills",
-      "Fearless SST",
+      "Regular feedback to parents",
+      "Confidence & exam-temperament building",
       "Weekly concept tests",
       "Doubt-solving sessions",
     ],
