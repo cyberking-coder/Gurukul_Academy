@@ -164,13 +164,16 @@ function ScrollCard({
             sizes="(max-width: 768px) 100vw, 672px"
             priority={false}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#08090b]/75 via-transparent to-transparent" />
-        </div>
-        {/* quote */}
-        <div className="px-6 md:px-8 py-5 md:py-6">
-          <p className="font-heading text-base md:text-xl text-cream/90 leading-relaxed italic">
-            &ldquo;{item.quote}&rdquo;
-          </p>
+          {/* stronger gradient so overlaid quote is readable */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#08090b] via-[#08090b]/50 to-transparent" />
+
+          {/* quote overlaid at the bottom of the image */}
+          <div className="absolute inset-x-0 bottom-0 px-6 md:px-8 pb-6 md:pb-8">
+            <div className="h-0.5 w-10 bg-gold/70 mb-3" />
+            <p className="font-heading text-lg md:text-2xl text-cream leading-snug italic">
+              &ldquo;{item.quote}&rdquo;
+            </p>
+          </div>
         </div>
       </div>
     </motion.div>
