@@ -70,7 +70,7 @@ export default function Navbar() {
               aria-label="Instagram"
               className="text-cream/70 hover:text-gold transition-colors"
             >
-              <InstagramIcon size={18} />
+              <InstagramIcon size={28} />
             </a>
             <a
               href={SITE.youtube}
@@ -79,7 +79,7 @@ export default function Navbar() {
               aria-label="YouTube"
               className="text-cream/70 hover:text-gold transition-colors"
             >
-              <YoutubeIcon size={20} />
+              <YoutubeIcon size={30} />
             </a>
           </div>
           <a
@@ -131,7 +131,7 @@ export default function Navbar() {
               aria-label="Instagram"
               className="text-cream/70 hover:text-gold transition-colors"
             >
-              <InstagramIcon size={22} />
+              <InstagramIcon size={28} />
             </a>
             <a
               href={SITE.youtube}
@@ -140,7 +140,7 @@ export default function Navbar() {
               aria-label="YouTube"
               className="text-cream/70 hover:text-gold transition-colors"
             >
-              <YoutubeIcon size={24} />
+              <YoutubeIcon size={30} />
             </a>
           </div>
         </motion.div>

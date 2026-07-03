@@ -39,18 +39,18 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
             >
-              <InstagramIcon size={18} />
+              <InstagramIcon size={24} />
             </a>
             <a
               href={SITE.youtube}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
             >
-              <YoutubeIcon size={20} />
+              <YoutubeIcon size={26} />
             </a>
           </div>
         </div>

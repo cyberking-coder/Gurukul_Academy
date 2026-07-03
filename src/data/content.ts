@@ -3,8 +3,8 @@ export const SITE = {
   nameHindi: "गुरुकुल अकॅडमी",
   rating: 5.0,
   reviewCount: 118,
-  phone: "099708 15169",
-  phone2: "082753 08716",
+  phone: "082753 08716",
+  phone2: "099708 15169",
   whatsapp: "918275308716",
   whatsappMessage:
     "Hi Gurukul Academy! I'd like to know more about your coaching classes and a free trial class.",
