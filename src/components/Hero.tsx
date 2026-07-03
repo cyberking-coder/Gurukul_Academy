@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
 
         {/* Circular photo frame */}
-        <div className="relative lg:-translate-x-10 xl:-translate-x-16">
+        <div className="relative lg:translate-x-12 xl:translate-x-24">
           <HeroCircle />
         </div>
       </div>
