@@ -59,7 +59,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
-          className="font-devanagari text-gold/80 text-lg md:text-xl mb-6 tracking-wide"
+          className="font-devanagari text-gold/80 text-xl md:text-2xl mb-6 tracking-wide"
         >
           गुरुकुल अकॅडमी
         </motion.div>
@@ -79,9 +79,9 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.7 }}
           className="mt-8 max-w-xl text-base md:text-lg text-cream/65 leading-relaxed"
         >
-          Pune&rsquo;s most trusted coaching institute for Class 8–12 — all
-          subjects, small batches of 12–15, personally mentored, consistently
-          excellent.
+          Pune&rsquo;s most trusted coaching institute — Class 8th to 10th all
+          subjects and 11th &amp; 12th (PCMB). Small batches of 12–15, personally
+          mentored, consistently excellent.
         </motion.p>
 
         <motion.div

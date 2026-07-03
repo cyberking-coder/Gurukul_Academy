@@ -1,9 +1,8 @@
 const ITEMS = [
-  "Maths",
-  "Science",
+  "8th to 10th All Subjects",
   "Class 9 & 10",
   "Class 11 & 12",
-  "PCM",
+  "PCMB",
   "NEET",
   "JEE",
   "Crash Courses",
