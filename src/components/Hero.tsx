@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Star, MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SITE } from "@/data/content";
+import HeroCircle from "./HeroCircle";
 
 const wordVariants: Variants = {
   hidden: { y: "110%" },
@@ -52,7 +53,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="mx-auto max-w-7xl w-full px-6 lg:px-10">
+      <div className="mx-auto max-w-7xl w-full px-6 lg:px-10 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-10 items-center">
+        <div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -119,6 +121,12 @@ export default function Hero() {
           <MapPin size={14} />
           Karvenagar, Pune — Maharashtra 411052
         </motion.div>
+        </div>
+
+        {/* Circular photo frame */}
+        <div className="relative lg:pr-4">
+          <HeroCircle />
+        </div>
       </div>
 
       <motion.div
