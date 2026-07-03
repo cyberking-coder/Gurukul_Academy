@@ -4,6 +4,12 @@ export const SITE = {
   rating: 5.0,
   reviewCount: 118,
   phone: "099708 15169",
+  phone2: "082753 08716",
+  whatsapp: "918275308716",
+  whatsappMessage:
+    "Hi Gurukul Academy! I'd like to know more about your coaching classes and a free trial class.",
+  instagram: "https://www.instagram.com/gurukulacademy10/",
+  youtube: "https://www.youtube.com/@GurukulAcademy105",
   address:
     "Shop No. 227, Kakade Plaza, Warje Jakat Naka, Karvenagar, Pune, Maharashtra 411052",
   hours: "Mon–Sat · 9:00 AM – 8:00 PM",
@@ -65,7 +71,7 @@ export const FEATURES = [
   },
   {
     title: "Warm, Supportive Culture",
-    desc: "A gurukul spirit — students call it home, not just a tuition class.",
+    desc: "A gurukul spirit — students call it a Temple, not just a tuition class.",
   },
 ];
 

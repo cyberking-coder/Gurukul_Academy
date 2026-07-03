@@ -19,7 +19,7 @@ export default function SectionHeading({
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="max-w-2xl"
     >
-      <span className="text-gold text-xs uppercase tracking-[0.25em] font-semibold">
+      <span className="text-gold text-sm md:text-base uppercase tracking-[0.25em] font-semibold">
         {eyebrow}
       </span>
       <h2 className="font-heading mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">

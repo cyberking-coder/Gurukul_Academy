@@ -65,7 +65,7 @@ export default function Contact() {
               {SITE.hours}
             </InfoRow>
             <InfoRow icon={Phone} label="Phone">
-              {SITE.phone}
+              {SITE.phone} · {SITE.phone2}
             </InfoRow>
           </div>
         </motion.div>

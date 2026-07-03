@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Phone, Menu, X } from "lucide-react";
+import { InstagramIcon, YoutubeIcon } from "./SocialIcons";
 import { SITE } from "@/data/content";
 
 const LINKS = [
@@ -61,6 +62,26 @@ export default function Navbar() {
             <Phone size={15} />
             {SITE.phone}
           </a>
+          <div className="flex items-center gap-2">
+            <a
+              href={SITE.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-cream/70 hover:text-gold transition-colors"
+            >
+              <InstagramIcon size={18} />
+            </a>
+            <a
+              href={SITE.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="text-cream/70 hover:text-gold transition-colors"
+            >
+              <YoutubeIcon size={20} />
+            </a>
+          </div>
           <a
             href="#contact"
             className="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-ink hover:bg-gold-light transition-colors"
@@ -102,6 +123,26 @@ export default function Navbar() {
           >
             Enroll Now
           </a>
+          <div className="flex items-center gap-5 pt-2">
+            <a
+              href={SITE.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-cream/70 hover:text-gold transition-colors"
+            >
+              <InstagramIcon size={22} />
+            </a>
+            <a
+              href={SITE.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="text-cream/70 hover:text-gold transition-colors"
+            >
+              <YoutubeIcon size={24} />
+            </a>
+          </div>
         </motion.div>
       )}
     </motion.header>
