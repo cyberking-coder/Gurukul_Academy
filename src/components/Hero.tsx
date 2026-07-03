@@ -79,8 +79,9 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.7 }}
           className="mt-8 max-w-xl text-base md:text-lg text-cream/65 leading-relaxed"
         >
-          Pune&rsquo;s most trusted coaching institute — Class 8th to 10th all
-          subjects and 11th &amp; 12th (PCMB). Small batches of 12–15, personally
+          Pune&rsquo;s most trusted coaching institute — Class 8<sup className="text-[0.6em] align-super">th</sup> to
+          10<sup className="text-[0.6em] align-super">th</sup> all subjects and 11<sup className="text-[0.6em] align-super">th</sup> &amp;
+          12<sup className="text-[0.6em] align-super">th</sup> (PCMB). Small batches of 12–15, personally
           mentored, consistently excellent.
         </motion.p>
 
