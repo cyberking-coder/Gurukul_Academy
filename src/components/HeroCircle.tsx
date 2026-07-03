@@ -28,7 +28,7 @@ export default function HeroCircle() {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.6, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-      className="relative mx-auto aspect-square w-[78vw] max-w-[460px] lg:w-full"
+      className="relative mx-auto aspect-square w-[82vw] max-w-[540px] lg:w-full"
     >
       {/* Rotating gold gradient arc */}
       <motion.div
@@ -47,13 +47,13 @@ export default function HeroCircle() {
       />
 
       {/* Soft glow behind the circle */}
-      <div className="absolute inset-4 rounded-full bg-gold/15 blur-[60px]" />
+      <div className="absolute inset-2 rounded-full bg-gold/15 blur-[80px]" />
 
       {/* Thin static ring */}
-      <div className="absolute inset-[10px] rounded-full border border-gold/25" />
+      <div className="absolute inset-[10px] rounded-full border border-gold/20" />
 
       {/* Photo circle */}
-      <div className="absolute inset-[18px] rounded-full overflow-hidden border border-gold/30 shadow-2xl shadow-black/60 bg-[#0d0e11]">
+      <div className="absolute inset-[18px] rounded-full overflow-hidden bg-[#0d0e11]">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -68,13 +68,24 @@ export default function HeroCircle() {
               alt={PHOTOS[index].alt}
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 78vw, 460px"
+              sizes="(max-width: 1024px) 82vw, 540px"
               priority
             />
-            {/* subtle bottom tint so it blends with the dark theme */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#08090b]/40 via-transparent to-transparent" />
           </motion.div>
         </AnimatePresence>
+
+        {/* Vignette so the photo edges melt into the dark theme */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 42%, transparent 52%, rgba(8,9,11,0.35) 74%, rgba(8,9,11,0.85) 100%)",
+          }}
+        />
+        {/* Gentle warm tint from the bottom */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08090b]/55 via-transparent to-transparent" />
+        {/* Inner gold rim light */}
+        <div className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-gold/25" />
       </div>
 
       {/* Floating badges */}
