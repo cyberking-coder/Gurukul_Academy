@@ -140,7 +140,7 @@ function ScrollCard({
   const y = useTransform(
     scrollYProgress,
     [range.fadeIn, range.fullIn, range.fullOut, range.fadeOut],
-    [55, 0, 0, -55]
+    [35, -20, -20, -75]
   );
   const scale = useTransform(
     scrollYProgress,
