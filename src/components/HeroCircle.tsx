@@ -8,9 +8,9 @@ import { BookOpen, GraduationCap, Award, Sparkles } from "lucide-react";
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const PHOTOS = [
-  { src: `${BASE}/hero/student-1.png`, alt: "Teacher personally mentoring a student" },
-  { src: `${BASE}/hero/student-2.png`, alt: "Focused student studying" },
-  { src: `${BASE}/hero/student-3.png`, alt: "Student preparing for exams" },
+  { src: `${BASE}/hero/hero-4.png`, alt: "Gurukul Academy teacher" },
+  { src: `${BASE}/hero/hero-5.png`, alt: "Teacher personally mentoring a group of students" },
+  { src: `${BASE}/hero/hero-6.png`, alt: "Teacher explaining a concept to students" },
 ];
 
 export default function HeroCircle() {

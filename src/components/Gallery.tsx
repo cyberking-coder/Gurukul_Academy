@@ -44,6 +44,24 @@ const IMAGES = [
     quote: "Where focus meets passion, excellence is inevitable.",
     tag: "In Class",
   },
+  {
+    src: `${BASE}/gallery/gallery-7.png`,
+    alt: "Teacher guiding a full classroom of students at their desks",
+    quote: "",
+    tag: "In Class",
+  },
+  {
+    src: `${BASE}/gallery/gallery-8.png`,
+    alt: "Students posing together outside the Gurukul Academy signboard",
+    quote: "",
+    tag: "Students",
+  },
+  {
+    src: `${BASE}/gallery/gallery-9.jpg`,
+    alt: "Teacher reviewing work with a group of students",
+    quote: "",
+    tag: "Faculty & Students",
+  },
 ];
 
 const N = IMAGES.length;
@@ -164,16 +182,6 @@ function ScrollCard({
             sizes="(max-width: 768px) 100vw, 672px"
             priority={false}
           />
-          {/* stronger gradient so overlaid quote is readable */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#08090b] via-[#08090b]/50 to-transparent" />
-
-          {/* quote overlaid at the bottom of the image */}
-          <div className="absolute inset-x-0 bottom-0 px-6 md:px-8 pb-6 md:pb-8">
-            <div className="h-0.5 w-10 bg-gold/70 mb-3" />
-            <p className="font-heading text-lg md:text-2xl text-cream leading-snug italic">
-              &ldquo;{item.quote}&rdquo;
-            </p>
-          </div>
         </div>
       </div>
     </motion.div>
