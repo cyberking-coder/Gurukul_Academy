@@ -79,7 +79,7 @@ const jsonLd = {
   name: "Gurukul Academy",
   alternateName: "गुरुकुल अकॅडमी",
   url: BASE_URL,
-  logo: `${BASE_URL}/favicon.ico`,
+  logo: `${BASE_URL}/logo.webp`,
   description:
     "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
   address: {
@@ -124,7 +124,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#08090b] text-[#f3efe7] selection:bg-[#d8a44c] selection:text-black">
+      <body className="min-h-full flex flex-col bg-white text-[#2a1512] selection:bg-[#e8820e] selection:text-white">
         {children}
       </body>
     </html>

@@ -14,7 +14,7 @@ export default function Stats() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="border-l border-white/10 pl-5"
+            className="border-l border-black/10 pl-5"
           >
             <div className="font-heading text-4xl md:text-5xl font-bold text-gradient-gold">
               {stat.value}

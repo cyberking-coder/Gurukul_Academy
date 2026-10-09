@@ -171,7 +171,7 @@ function ScrollCard({
       className="absolute inset-0 flex items-center justify-center px-4"
       style={{ opacity, y, scale }}
     >
-      <div className="relative w-full max-w-2xl rounded-3xl border border-gold/30 bg-white/[0.03] overflow-hidden shadow-2xl shadow-black/60">
+      <div className="relative w-full max-w-2xl rounded-3xl border border-gold/30 bg-[#faf6ef] overflow-hidden shadow-2xl shadow-black/15">
         {/* photo */}
         <div className="relative w-full aspect-[4/3]">
           <Image

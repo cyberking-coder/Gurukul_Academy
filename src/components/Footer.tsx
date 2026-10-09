@@ -1,17 +1,24 @@
+import Image from "next/image";
 import { Phone } from "lucide-react";
 import { InstagramIcon, YoutubeIcon } from "./SocialIcons";
 import { SITE } from "@/data/content";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10">
+    <footer className="border-t border-black/10 bg-[#faf6ef]">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-12 flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-baseline gap-2">
-            <span className="font-heading text-lg font-bold">
-              Gurukul<span className="text-gold">.</span>Academy
-            </span>
-            <span className="font-devanagari text-cream/40 text-sm">
+          <div className="flex items-center gap-3">
+            <Image
+              src={`${BASE}/logo.webp`}
+              alt="Gurukul Academy"
+              width={150}
+              height={100}
+              className="h-14 w-auto"
+            />
+            <span className="font-devanagari text-cream/50 text-sm">
               गुरुकुल अकॅडमी
             </span>
           </div>
@@ -39,7 +46,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
             >
               <InstagramIcon size={24} />
             </a>
@@ -48,14 +55,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 text-cream/70 hover:text-gold hover:border-gold/40 transition-colors"
             >
               <YoutubeIcon size={26} />
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-white/5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-black/10">
           <p className="text-xs text-cream/40 text-center md:text-left">
             {SITE.address}
           </p>

@@ -2,9 +2,12 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Phone, Menu, X } from "lucide-react";
 import { InstagramIcon, YoutubeIcon } from "./SocialIcons";
 import { SITE } from "@/data/content";
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const LINKS = [
   { label: "Programs", href: "#programs" },
@@ -31,15 +34,20 @@ export default function Navbar() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#08090b]/80 backdrop-blur-xl border-b border-white/10"
+          ? "bg-white/85 backdrop-blur-xl border-b border-black/10 shadow-sm shadow-black/5"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
-        <a href="#top" className="flex items-baseline gap-2 group">
-          <span className="font-heading text-xl md:text-2xl font-bold tracking-tight">
-            Gurukul<span className="text-gold">.</span>Academy
-          </span>
+        <a href="#top" className="flex items-center gap-2 group" aria-label="Gurukul Academy — home">
+          <Image
+            src={`${BASE}/logo.webp`}
+            alt="Gurukul Academy"
+            width={150}
+            height={100}
+            priority
+            className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-10">
@@ -104,7 +112,7 @@ export default function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-[#08090b] border-t border-white/10 px-6 py-6 flex flex-col gap-5"
+          className="md:hidden bg-white border-t border-black/10 px-6 py-6 flex flex-col gap-5"
         >
           {LINKS.map((l) => (
             <a

@@ -10,7 +10,7 @@ export default function Contact() {
       id="contact"
       className="relative mx-auto max-w-7xl px-6 lg:px-10 py-24 md:py-32"
     >
-      <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/[0.04] to-transparent p-10 md:p-16">
+      <div className="relative overflow-hidden rounded-[2.5rem] border border-black/10 bg-gradient-to-br from-[#faf6ef] to-white p-10 md:p-16 shadow-xl shadow-black/5">
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold/10 blur-[100px]" />
 
         <motion.div
@@ -46,7 +46,7 @@ export default function Contact() {
                 href="https://www.google.com/maps/search/?api=1&query=Gurukul%20Academy%20Karvenagar%20Pune"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-sm font-semibold hover:border-gold hover:text-gold transition-colors"
+                className="group inline-flex items-center gap-3 rounded-full border border-black/20 px-7 py-4 text-sm font-semibold hover:border-gold hover:text-gold transition-colors"
               >
                 Get Directions
                 <ArrowUpRight
@@ -84,7 +84,7 @@ function InfoRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-4 rounded-2xl border border-white/10 bg-black/20 p-5">
+    <div className="flex gap-4 rounded-2xl border border-black/10 bg-white p-5 shadow-sm shadow-black/5">
       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold">
         <Icon size={18} />
       </div>

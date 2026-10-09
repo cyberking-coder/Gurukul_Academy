@@ -92,7 +92,7 @@ export default function WhyUs() {
         desc="We kept everything that made the old gurukul tradition work — closeness, mentorship, accountability — and paired it with rigorous modern teaching."
       />
 
-      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 rounded-3xl overflow-hidden border border-white/10">
+      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-black/10 rounded-3xl overflow-hidden border border-black/10">
         {FEATURES.map((f, i) => (
           <motion.div
             key={f.title}
@@ -100,7 +100,7 @@ export default function WhyUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="group relative bg-[#0b0c0e] p-8 hover:bg-white/[0.04] transition-colors duration-500 overflow-hidden"
+            className="group relative bg-[#faf6ef] p-8 hover:bg-white transition-colors duration-500 overflow-hidden"
           >
             {/* Gold glow blob — fades in on hover, low opacity */}
             <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">

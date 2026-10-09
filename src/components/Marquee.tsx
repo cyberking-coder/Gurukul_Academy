@@ -14,7 +14,7 @@ const ITEMS = [
 export default function Marquee() {
   const loop = [...ITEMS, ...ITEMS];
   return (
-    <div className="relative border-y border-white/10 bg-gold py-4 overflow-hidden -rotate-1 scale-[1.02]">
+    <div className="relative border-y border-black/10 bg-gold py-4 overflow-hidden -rotate-1 scale-[1.02]">
       <div className="marquee-track">
         {loop.map((item, i) => (
           <div key={i} className="flex items-center px-6 shrink-0">
