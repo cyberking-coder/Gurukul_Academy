@@ -14,7 +14,7 @@ const body = Inter({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const BASE_URL = "https://cyberking-coder.github.io/Gurukul_Academy";
+const BASE_URL = "https://gurukul-academy-omega.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
