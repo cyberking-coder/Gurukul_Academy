@@ -1,8 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Star, MapPin, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Star, MapPin } from "lucide-react";
 import { SITE } from "@/data/content";
 import HeroCircle from "./HeroCircle";
 
@@ -91,17 +90,6 @@ export default function Hero() {
           transition={{ delay: 1.05, duration: 0.7 }}
           className="mt-10 flex flex-wrap items-center gap-5"
         >
-          <Link
-            href="/trial"
-            className="group inline-flex items-center gap-3 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-transform hover:scale-105"
-          >
-            Take a Free Trial Class
-            <ArrowRight
-              size={16}
-              className="transition-transform group-hover:translate-x-1"
-            />
-          </Link>
-
           <div className="flex items-center gap-2 text-sm text-cream/70">
             <div className="flex items-center gap-1 text-gold">
               {Array.from({ length: 5 }).map((_, i) => (
