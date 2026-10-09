@@ -14,7 +14,7 @@ const body = Inter({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const BASE_URL = "https://cyberking-coder.github.io/Gurukul_Academy";
+const BASE_URL = "https://gurukul-academy-omega.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -23,15 +23,19 @@ export const metadata: Metadata = {
     template: "%s | Gurukul Academy Pune",
   },
   description:
-    "Gurukul Academy — Pune's top-rated coaching institute for Class 9–12 Maths & Science. Small batches of 12–15 students, personal attention, 5.0 ★ Google rating, 118+ reviews. Located at Karvenagar, Pune 411052.",
+    "Gurukul Academy — Pune's top-rated coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB). Small batches of 12–15 students, personal attention, 5.0 ★ Google rating, 118+ reviews. Located at Karvenagar, Pune 411052.",
   keywords: [
+    "Gurukul Academy",
     "Gurukul Academy Pune",
+    "Gurukul Academy Karvenagar",
     "coaching classes Karvenagar",
     "best coaching institute Pune",
-    "12th science coaching Pune",
+    "11th 12th science coaching Pune",
+    "PCMB coaching Pune",
     "maths tuition Pune",
     "science tuition Pune",
-    "Class 9 10 11 12 coaching Pune",
+    "Class 8 9 10 coaching Pune",
+    "Class 11 12 coaching Pune",
     "Warje coaching classes",
     "HSC coaching Pune",
     "SSC coaching Pune",
@@ -47,6 +51,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+  verification: {
+    google: "Ko8OqTDLzjB4TJ0NsTwt2RRiNWMGXZ7EuKxEmKj720w",
+  },
   alternates: { canonical: BASE_URL },
   openGraph: {
     type: "website",
@@ -55,13 +62,13 @@ export const metadata: Metadata = {
     siteName: "Gurukul Academy",
     title: "Gurukul Academy — Best Coaching Classes in Karvenagar, Pune",
     description:
-      "5.0 ★ rated coaching institute. Small batches of 12–15 students. Personal mentoring for Class 9–12 Maths & Science. Karvenagar, Pune.",
+      "5.0 ★ rated coaching institute. Small batches of 12–15 students. Personal mentoring for Class 8th–10th (all subjects) & 11th–12th Science (PCMB). Karvenagar, Pune.",
     images: [{ url: `${BASE_URL}/gallery/gallery-6.png`, width: 1200, height: 630, alt: "Gurukul Academy classroom" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gurukul Academy — Best Coaching in Karvenagar, Pune",
-    description: "5.0 ★ · 118+ reviews · Small batches · Personal mentoring · Class 9–12 Maths & Science.",
+    description: "5.0 ★ · 118+ reviews · Small batches · Personal mentoring · Class 8th–12th (PCMB).",
     images: [`${BASE_URL}/gallery/gallery-6.png`],
   },
 };
@@ -74,7 +81,7 @@ const jsonLd = {
   url: BASE_URL,
   logo: `${BASE_URL}/favicon.ico`,
   description:
-    "Coaching institute for Class 9–12 Maths & Science with small batches of 12–15 students and personalised mentoring.",
+    "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",

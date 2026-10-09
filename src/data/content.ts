@@ -7,7 +7,7 @@ export const SITE = {
   phone2: "099708 15169",
   whatsapp: "918275308716",
   whatsappMessage:
-    "Hi Gurukul Academy! I'd like to know more about your coaching classes and a free trial class.",
+    "Hi Gurukul Academy! I'd like to know more about your coaching classes and admissions.",
   instagram: "https://www.instagram.com/gurukulacademy10/",
   youtube: "https://www.youtube.com/@GurukulAcademy105",
   address:
