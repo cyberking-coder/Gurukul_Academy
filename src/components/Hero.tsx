@@ -58,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
-          className="font-devanagari text-gold/80 text-xl md:text-2xl mb-6 tracking-wide"
+          className="font-devanagari text-gold/80 text-2xl md:text-3xl mb-6 tracking-wide"
         >
           गुरुकुल अकॅडमी
         </motion.div>

@@ -18,7 +18,7 @@ export default function Footer() {
               height={100}
               className="h-14 w-auto"
             />
-            <span className="font-devanagari text-cream/50 text-sm">
+            <span className="font-devanagari text-cream/50 text-base md:text-lg">
               गुरुकुल अकॅडमी
             </span>
           </div>
