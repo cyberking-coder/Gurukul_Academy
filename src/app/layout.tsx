@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
+import { SITE } from "@/data/content";
 
 const heading = Bricolage_Grotesque({
   variable: "--font-heading",
@@ -18,6 +19,8 @@ const BASE_URL = "https://gurukul-academy-omega.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  applicationName: "Gurukul Academy",
+  appleWebApp: { title: "Gurukul Academy" },
   title: {
     default: "Gurukul Academy | Best Coaching Classes in Karvenagar, Pune",
     template: "%s | Gurukul Academy Pune",
@@ -75,36 +78,85 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  name: "Gurukul Academy",
-  alternateName: "गुरुकुल अकॅडमी",
-  url: BASE_URL,
-  logo: `${BASE_URL}/favicon.ico`,
-  description:
-    "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
-    addressLocality: "Karvenagar",
-    addressRegion: "Pune",
-    postalCode: "411052",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 18.4813,
-    longitude: 73.8126,
-  },
-  telephone: "+919970815169",
-  openingHours: "Mo-Sa 09:00-20:00",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "118",
-    bestRating: "5",
-  },
-  sameAs: [
-    "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+  "@graph": [
+    {
+      // Tells Google the site name to show above the result title
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      name: "Gurukul Academy",
+      alternateName: ["Gurukul Academy Pune", "गुरुकुल अकॅडमी"],
+      url: BASE_URL,
+      publisher: { "@id": `${BASE_URL}/#organization` },
+    },
+    {
+      "@type": ["EducationalOrganization", "LocalBusiness"],
+      "@id": `${BASE_URL}/#organization`,
+      name: "Gurukul Academy",
+      alternateName: ["Gurukul Academy Pune", "गुरुकुल अकॅडमी"],
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.webp`,
+        width: 1536,
+        height: 1024,
+      },
+      image: [
+        `${BASE_URL}/logo.webp`,
+        `${BASE_URL}/gallery/gallery-6.png`,
+      ],
+      description:
+        "Gurukul Academy is a top-rated coaching institute in Karvenagar, Pune for Class 8th–10th (all subjects) and 11th–12th Science (PCMB), with small batches of 12–15 students and personalised mentoring.",
+      slogan: "Knowledge · Discipline · Success",
+      priceRange: "₹₹",
+      telephone: "+919970815169",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
+        addressLocality: "Karvenagar",
+        addressRegion: "Pune",
+        postalCode: "411052",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 18.4813,
+        longitude: 73.8126,
+      },
+      hasMap:
+        "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+      areaServed: [
+        { "@type": "City", name: "Pune" },
+        { "@type": "Place", name: "Karvenagar" },
+        { "@type": "Place", name: "Warje" },
+        { "@type": "Place", name: "Kothrud" },
+      ],
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ],
+          opens: "09:00",
+          closes: "20:00",
+        },
+      ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "118",
+        bestRating: "5",
+      },
+      sameAs: [
+        SITE.instagram,
+        SITE.youtube,
+        "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+      ],
+    },
   ],
 };
 
@@ -124,7 +176,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#08090b] text-[#f3efe7] selection:bg-[#d8a44c] selection:text-black">
+      <body className="min-h-full flex flex-col bg-white text-[#2a1512] selection:bg-[#e8820e] selection:text-white">
         {children}
       </body>
     </html>

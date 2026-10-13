@@ -77,7 +77,7 @@ export default function Testimonials() {
             viewport={{ once: true, margin: "-40px" }}
             variants={cardVariants}
             whileHover={{ y: -4, transition: { duration: 0.25 } }}
-            className="group relative flex flex-col rounded-3xl border border-white/10 bg-white/[0.02] p-8 overflow-hidden cursor-default"
+            className="group relative flex flex-col rounded-3xl border border-black/10 bg-[#faf7f0] p-8 overflow-hidden cursor-default"
           >
             {/* Shimmer border glow on hover */}
             <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -96,7 +96,7 @@ export default function Testimonials() {
               &ldquo;{t.text}&rdquo;
             </p>
 
-            <div className="mt-6 flex items-center gap-3 pt-6 border-t border-white/10">
+            <div className="mt-6 flex items-center gap-3 pt-6 border-t border-black/10">
               {/* Avatar with pulse ring on hover */}
               <div className="relative">
                 <div className="absolute inset-0 rounded-full bg-gold/20 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 blur-sm" />

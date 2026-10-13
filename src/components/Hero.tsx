@@ -46,7 +46,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              "linear-gradient(to right, #f3efe7 1px, transparent 1px), linear-gradient(to bottom, #f3efe7 1px, transparent 1px)",
+              "linear-gradient(to right, #9e1b1b 1px, transparent 1px), linear-gradient(to bottom, #9e1b1b 1px, transparent 1px)",
             backgroundSize: "64px 64px",
           }}
         />
@@ -58,12 +58,15 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
-          className="font-devanagari text-gold/80 text-xl md:text-2xl mb-6 tracking-wide"
+          className="font-devanagari text-gold/80 text-2xl md:text-3xl mb-6 tracking-wide"
         >
           गुरुकुल अकॅडमी
         </motion.div>
 
         <h1 className="font-heading font-extrabold leading-[0.95] tracking-tight text-[13vw] md:text-[7vw] lg:text-[6.2vw]">
+          <span className="sr-only">
+            Gurukul Academy — Best Coaching Classes in Karvenagar, Pune.{" "}
+          </span>
           <RevealWord i={0}>Where</RevealWord>{" "}
           <RevealWord i={1}>Brilliance</RevealWord>
           <br />

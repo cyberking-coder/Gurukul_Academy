@@ -53,7 +53,7 @@ export default function HeroCircle() {
       <div className="absolute inset-[10px] rounded-full border border-gold/20" />
 
       {/* Photo circle */}
-      <div className="absolute inset-[18px] rounded-full overflow-hidden bg-[#0d0e11]">
+      <div className="absolute inset-[18px] rounded-full overflow-hidden bg-[#faf6ef]">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -74,16 +74,16 @@ export default function HeroCircle() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Vignette so the photo edges melt into the dark theme */}
+        {/* Vignette so the photo edges melt into the white theme */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(circle at 50% 42%, transparent 52%, rgba(8,9,11,0.35) 74%, rgba(8,9,11,0.85) 100%)",
+              "radial-gradient(circle at 50% 42%, transparent 52%, rgba(255,255,255,0.35) 74%, rgba(255,255,255,0.85) 100%)",
           }}
         />
-        {/* Gentle warm tint from the bottom */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08090b]/55 via-transparent to-transparent" />
+        {/* Gentle light wash from the bottom */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/55 via-transparent to-transparent" />
         {/* Inner gold rim light */}
         <div className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-gold/25" />
       </div>
@@ -130,7 +130,7 @@ function FloatBadge({
     <motion.div
       animate={{ y: [0, -10, 0] }}
       transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay }}
-      className={`absolute flex h-11 w-11 items-center justify-center rounded-2xl border border-gold/30 bg-[#0d0e11]/90 text-gold backdrop-blur-md shadow-lg shadow-black/40 ${className}`}
+      className={`absolute flex h-11 w-11 items-center justify-center rounded-2xl border border-gold/30 bg-white/90 text-gold backdrop-blur-md shadow-lg shadow-black/10 ${className}`}
     >
       {children}
     </motion.div>

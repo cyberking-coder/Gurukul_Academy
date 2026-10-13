@@ -22,7 +22,7 @@ export default function Programs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6, delay: (i % 2) * 0.1 }}
-            className="group relative rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-10 hover:bg-white/[0.05] hover:border-gold/40 transition-all duration-500"
+            className="group relative rounded-3xl border border-black/10 bg-[#faf7f0] p-8 md:p-10 hover:bg-[#f4ece0] hover:border-gold/50 hover:shadow-xl hover:shadow-black/5 transition-all duration-500"
           >
             <div className="flex items-center justify-between">
               <span className="text-sm md:text-base uppercase tracking-[0.2em] text-gold/80 font-semibold">
