@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
+import { SITE } from "@/data/content";
 
 const heading = Bricolage_Grotesque({
   variable: "--font-heading",
@@ -88,10 +89,10 @@ const jsonLd = {
       publisher: { "@id": `${BASE_URL}/#organization` },
     },
     {
-      "@type": "EducationalOrganization",
+      "@type": ["EducationalOrganization", "LocalBusiness"],
       "@id": `${BASE_URL}/#organization`,
       name: "Gurukul Academy",
-      alternateName: "गुरुकुल अकॅडमी",
+      alternateName: ["Gurukul Academy Pune", "गुरुकुल अकॅडमी"],
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
@@ -99,9 +100,15 @@ const jsonLd = {
         width: 1536,
         height: 1024,
       },
-      image: `${BASE_URL}/logo.webp`,
+      image: [
+        `${BASE_URL}/logo.webp`,
+        `${BASE_URL}/gallery/gallery-6.png`,
+      ],
       description:
-        "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
+        "Gurukul Academy is a top-rated coaching institute in Karvenagar, Pune for Class 8th–10th (all subjects) and 11th–12th Science (PCMB), with small batches of 12–15 students and personalised mentoring.",
+      slogan: "Knowledge · Discipline · Success",
+      priceRange: "₹₹",
+      telephone: "+919970815169",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
@@ -115,8 +122,29 @@ const jsonLd = {
         latitude: 18.4813,
         longitude: 73.8126,
       },
-      telephone: "+919970815169",
-      openingHours: "Mo-Sa 09:00-20:00",
+      hasMap:
+        "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+      areaServed: [
+        { "@type": "City", name: "Pune" },
+        { "@type": "Place", name: "Karvenagar" },
+        { "@type": "Place", name: "Warje" },
+        { "@type": "Place", name: "Kothrud" },
+      ],
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ],
+          opens: "09:00",
+          closes: "20:00",
+        },
+      ],
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5.0",
@@ -124,6 +152,8 @@ const jsonLd = {
         bestRating: "5",
       },
       sameAs: [
+        SITE.instagram,
+        SITE.youtube,
         "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
       ],
     },

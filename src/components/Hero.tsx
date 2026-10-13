@@ -64,6 +64,9 @@ export default function Hero() {
         </motion.div>
 
         <h1 className="font-heading font-extrabold leading-[0.95] tracking-tight text-[13vw] md:text-[7vw] lg:text-[6.2vw]">
+          <span className="sr-only">
+            Gurukul Academy — Best Coaching Classes in Karvenagar, Pune.{" "}
+          </span>
           <RevealWord i={0}>Where</RevealWord>{" "}
           <RevealWord i={1}>Brilliance</RevealWord>
           <br />
