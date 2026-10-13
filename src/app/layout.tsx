@@ -18,6 +18,8 @@ const BASE_URL = "https://gurukul-academy-omega.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  applicationName: "Gurukul Academy",
+  appleWebApp: { title: "Gurukul Academy" },
   title: {
     default: "Gurukul Academy | Best Coaching Classes in Karvenagar, Pune",
     template: "%s | Gurukul Academy Pune",
@@ -75,36 +77,56 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  name: "Gurukul Academy",
-  alternateName: "गुरुकुल अकॅडमी",
-  url: BASE_URL,
-  logo: `${BASE_URL}/logo.webp`,
-  description:
-    "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
-    addressLocality: "Karvenagar",
-    addressRegion: "Pune",
-    postalCode: "411052",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 18.4813,
-    longitude: 73.8126,
-  },
-  telephone: "+919970815169",
-  openingHours: "Mo-Sa 09:00-20:00",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "118",
-    bestRating: "5",
-  },
-  sameAs: [
-    "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+  "@graph": [
+    {
+      // Tells Google the site name to show above the result title
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      name: "Gurukul Academy",
+      alternateName: ["Gurukul Academy Pune", "गुरुकुल अकॅडमी"],
+      url: BASE_URL,
+      publisher: { "@id": `${BASE_URL}/#organization` },
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": `${BASE_URL}/#organization`,
+      name: "Gurukul Academy",
+      alternateName: "गुरुकुल अकॅडमी",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.webp`,
+        width: 1536,
+        height: 1024,
+      },
+      image: `${BASE_URL}/logo.webp`,
+      description:
+        "Coaching institute for Class 8th–10th (all subjects) and 11th–12th Science (PCMB) with small batches of 12–15 students and personalised mentoring.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Shop No. 227, Kakade Plaza, Warje Jakat Naka",
+        addressLocality: "Karvenagar",
+        addressRegion: "Pune",
+        postalCode: "411052",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 18.4813,
+        longitude: 73.8126,
+      },
+      telephone: "+919970815169",
+      openingHours: "Mo-Sa 09:00-20:00",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "118",
+        bestRating: "5",
+      },
+      sameAs: [
+        "https://www.google.com/maps/place/Gurukul+Academy/@18.4813,73.8126",
+      ],
+    },
   ],
 };
 
